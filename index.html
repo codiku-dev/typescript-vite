@@ -2,14 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>GitHub Profile Finder</title>
   </head>
   <body>
     <div id="app">
-     Typescript + Vite boilerplate
+      <div id="error"></div>
+      <h1>GitHub Profile Finder</h1>
+      <input type="text" id="searchInput" placeholder="Enter GitHub username">
+      <button id="searchButton">Search</button>
+      
+      <div id="result">
+        <h2>User Info:</h2>
+        <div id="userInfo"></div>
+
+        <h2>Repositories:</h2>
+        <div id="totalStars"></div>
+        <ul id="reposList"></ul>
+      </div>
     </div>
-    <script type="module" src="/src/index.ts"></script>
+    <script type="module" src="/src/index.js"></script>
   </body>
 </html>
